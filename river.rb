@@ -1,6 +1,6 @@
 class River
 
-attr_reader :river_name
+attr_reader :river_name, :river_fish
 
   def initialize(river_name, river_fish)
     @river_name = river_name
@@ -11,8 +11,8 @@ attr_reader :river_name
     return @river_fish.length()
   end
 
-  def remove_fish()
-    @river_fish.shift()
+  def remove_fish(removed_fish)
+    @river_fish.delete(removed_fish)
   end
 
 end

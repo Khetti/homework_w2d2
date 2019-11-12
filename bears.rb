@@ -8,13 +8,16 @@ class Bears
     @stomach = []
   end
 
-  def stomach_contents
+  def stomach_contents()
     return @stomach.size()
   end
 
-  def take_fish(river_fish)
-    @stomach.push(river_fish)
-    @river.remove_fish()
+  def take_fish(fish)
+    @stomach.push(fish)
+  end
+
+  def roar()
+    return "ROOOOAAAAARRRRGH"
   end
 
 end
